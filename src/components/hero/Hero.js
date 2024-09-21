@@ -9,11 +9,11 @@ export default function () {
       <div className="left">
 
         <h1 className="h1">
-          Hi, I'm <b>Julia&nbsp;Walker</b>.
+          Hi, I'm <b style={{color:'#667FEA'}}>Julia&nbsp;Walker</b>.
           <br />Web Developer
         </h1>
 
-        <p className="h3">
+        <p className="h3" style={{color:'#728197'}}>
           Specialized in <abbr title="Accessibility">a11y</abbr>
           and Core Web Vitals
         </p>

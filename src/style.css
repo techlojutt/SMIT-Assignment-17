@@ -81,7 +81,18 @@
 
 }
 
-
+table{
+  border-collapse: collapse;
+  width: 100%;
+ 
+}
+tr{
+  border-bottom: 1px solid #EAEAEA;
+}
+tr,th {
+  padding: 10px;
+  text-align: left;
+}
 
 
 
@@ -951,8 +962,8 @@ footer .wrapper { text-align: center; }
     display:         flex;
     justify-content: center;
     align-items:     center;
-    background: var(--action-primary);
-    color: var(--foreground-secondary);
+    background: var(hsl(214, 32%, 91%));
+    color: var(hsl(211, 25%, 84%));
   }
 
   .topic-btn:hover .icon-box {

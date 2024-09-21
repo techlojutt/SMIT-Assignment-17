@@ -120,3 +120,40 @@ export const blogData =[
           }
         }
 ]
+
+export const topicItems = [
+ {
+  title:'Database',
+  iconClass:"fa-solid fa-database"
+ },
+ {
+  title: 'Accessibility',
+  iconClass :'fa-brands fa-accessible-icon'
+ },
+ {
+  title: 'Web Performance',
+  iconClass: 'fa-solid fa-rocket'
+ },
+];
+export const tags = [
+"#mongodb",
+"#nodejs",
+"#a11y",
+"#mobility",
+"#inclusion",
+"#webperf",
+"#optimize",
+"#performance"
+]
+
+export const SideCardData =[
+{
+    title : "Let's Talk",
+    description: 'Do you want to learn more about how I can help your company overcome problems? Let us have a conversation. ',
+},
+{
+  title : 'Newsletter',
+  description: ' Subscribe to our newsletter to be among the first to keep up with the latest updates. ',
+},
+
+]

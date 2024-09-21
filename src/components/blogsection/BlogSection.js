@@ -1,8 +1,11 @@
 import Card from "../card/Card";
-import {blogData} from "../../constant/blogs"
+import {blogData,topicItems,tags} from "../../constant/blogs"
 import Button from "../button/Button"
+import TopicItem from "../topicitem/TopicItem";
 
 export default function BlogSection() {
+  console.log(topicItems)
+  
   let hashtagStyles = {
     background: ' hsl(216, 15%, 52%)',
     color: 'hsl(214, 32%, 91%)'
@@ -36,48 +39,26 @@ export default function BlogSection() {
 
       <div className="topics">
 
-        <h2 className="h2">Topics</h2>
+        <h2 className="h2" style={{color:'#728197'}}>Topics</h2>
 
-        <a href="#" className="topic-btn">
-          <div className="icon-box">
-            <ion-icon name="server-outline"></ion-icon>
-          </div>
-
-          <p>Database</p>
-        </a>
-
-        <a href="#" className="topic-btn">
-          <div className="icon-box">
-            <ion-icon name="accessibility-outline"></ion-icon>
-          </div>
-
-          <p>Accessibility</p>
-        </a>
-
-        <a href="#" className="topic-btn">
-          <div className="icon-box">
-            <ion-icon name="rocket-outline"></ion-icon>
-          </div>
-
-          <p>Web Performance</p>
-        </a>
+      {
+        topicItems.map((topicItem,index) => {
+          return <TopicItem key={index} data={topicItem} />
+        })
+      }
 
       </div>
 
       <div className="tags">
 
-        <h2 className="h2">Tags</h2>
+        <h2 className="h2" style={{color:'#728197'}}>Tags</h2>
 
         <div className="wrapper">
 
-          <button className="hashtag" style={hashtagStyles}>#mongodb</button>
-          <button className="hashtag" style={hashtagStyles}>#nodejs</button>
-          <button className="hashtag" style={hashtagStyles}>#a11y</button>
-          <button className="hashtag" style={hashtagStyles}>#mobility</button>
-          <button className="hashtag" style={hashtagStyles}>#inclusion</button>
-          <button className="hashtag" style={hashtagStyles}>#webperf</button>
-          <button className="hashtag" style={hashtagStyles}>#optimize</button>
-          <button className="hashtag" style={hashtagStyles}>#performance</button>
+          {tags.map((tagItem,index) =>{
+             return(<button style={{color:'#728197',backgroundColor:'#E1E7EF'}} className="hashtag" key = {index}>{tagItem}</button>)
+          })}
+
 
         </div>
 
@@ -85,11 +66,11 @@ export default function BlogSection() {
 
       <div className="contact">
 
-        <h2 className="h2">Let's Talk</h2>
+        <h2 className="h2" style={{color:'#728197'}}>Let's Talk</h2>
 
         <div className="wrapper">
 
-          <p>
+          <p style={{color:'#728197'}}>
             Do you want to learn more about how I can help your company overcome problems? Let us have a
             conversation.
           </p>
@@ -122,11 +103,11 @@ export default function BlogSection() {
 
       <div className="newsletter">
 
-        <h2 className="h2">Newsletter</h2>
+        <h2 className="h2" style={{color:'#728197'}}>Newsletter</h2>
 
         <div className="wrapper">
 
-          <p>
+          <p style={{color:'#728197'}}>
             Subscribe to our newsletter to be among the first to keep up with the latest updates.
           </p>
 
